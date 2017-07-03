@@ -128,10 +128,10 @@ void SetupScene(PhysicsScene& scene)
 	Sphere* ball4 = new Sphere(vec2(-40, 0), vec2(0, 0), 3.0f, 10, vec4(0.5, 0.7, 1.0f, 1.0));
 	scene.AddActor(ball4);
 
-	Sphere* ball5 = new Sphere(vec2(-60, 100), vec2(0, 0), 3.0f, 10, vec4(0.5, 0.7, 1.0f, 1.0));
+	Sphere* ball5 = new Sphere(vec2(-65, 100), vec2(0, 0), 3.0f, 10, vec4(0.5, 0.7, 1.0f, 1.0));
 	scene.AddActor(ball5);
 
-	Sphere* ball6 = new Sphere(vec2(60, 100), vec2(0, 0), 3.0f, 10, vec4(0.5, 0.7, 1.0f, 1.0));
+	Sphere* ball6 = new Sphere(vec2(55, 100), vec2(0, 0), 3.0f, 10, vec4(0.5, 0.7, 1.0f, 1.0));
 	scene.AddActor(ball6);
 
 	Plane* plane = new Plane(glm::normalize(vec2(0.25f, 0.75f)), -70);
