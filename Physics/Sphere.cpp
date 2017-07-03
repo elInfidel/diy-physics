@@ -11,5 +11,5 @@ Sphere::~Sphere() {}
 
 void Sphere::MakeGizmo()
 {
-	Gizmos:::add2DCircle(position, radius, 20, color);
+	Gizmos::add2DCircle(position, radius, 20, color);
 }
