@@ -1,12 +1,16 @@
 #include "PhysicsScene.h"
+#include "PhysicsActor.h"
+
+#include "../ImguiImpl.h"
 #include "glm/glm.hpp"
 #include "glm/ext.hpp"
+
 #include "../Gizmos.h"
 #include "../Camera.h"
-#include "PhysicsActor.h"
+
 #include "Sphere.h"
 #include "Plane.h"
-#include "../ImguiImpl.h"
+#include "box.h"
 
 using glm::vec2;
 using glm::vec3;
@@ -80,7 +84,7 @@ void PhysicsScene::CheckForCollisions()
 {
 	int actorCount = actors.size();
 	// Need to check for collisions against all objects except this one.
-	for (int outer = 0; outer < actorCount - 1; outer++)
+	for (int outer = 0; outer < actorCount; outer++)
 	{
 		for (int inner = outer + 1; inner < actorCount; inner++)
 		{
